@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+  <title>First blog post &#39; the pipeline&#39; | </title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="keywords" content="">
+<meta property="og:locale" content='en_US'>
+<meta property="og:type" content="article">
+<meta property="og:title" content="First Blog Post - &#39;The Pipeline&#39;">
+<meta property="og:description" content="Obsidian - Note application
+
+This will be the application that we use to sync our blog posts with Hugo
+Obsidian Link : https://obsidian.md
+Note*:  Only the">
+<meta property="og:url" content="/posts/blog---pipeline/">
+<meta property="og:image" content="images/%!s(&lt;nil&gt;)">
+<link rel="canonical" href="/posts/blog---pipeline/">
+
+<link rel="apple-touch-icon" sizes="180x180" href='/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes='16x16' href='/favicon-16x16.png'>
+<link rel="manifest" href='/site.webmanifest'>
+
+<link rel="stylesheet" href="/css/styles.648e60c6d86809f863ae1346848574b9c685732794e7851c7d3e557de9ddd293bc1c209f963d5041785c2fd4268470bdfde453a99f550b655d1b4f825eed4682.css" integrity="sha512-ZI5gxthoCfhjrhNGhIV0ucaFcyeU54UcfT5Vfend0pO8HCCflj1QQXhcL9QmhHC9/eRTqZ9VC2VdG0&#43;CXu1Ggg==">
+</head>
+
+  <body>
+    <div class="nav-drop">
+  <div class="nav-body">
+    <div class="nav-close"></div><div class="color_mode">
+  <label for="mode">Toggle Dark Mode</label>
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+  </div>
+</div>
+<header class="nav">
+  <nav class="nav-menu">
+    <a href=/ class="nav-brand nav_item">
+        </a>
+    <div class="nav_bar-wrap">
+      <div class="nav_bar"></div>
+    </div>
+  </nav>
+</header>
+
+    <main>
+      
+  <div class="wrap mt post">
+    <div><p class=post_date>03. April 2025</p>
+      <h1 class="post_title">First Blog Post - &#39;The Pipeline&#39;</h1>
+      <div class="post_body">
+        <div class="post_inner">
+        
+        
+          <h2 id="obsidian---note-application"><em><strong>Obsidian - Note application</strong></em></h2>
+<ul>
+<li>This will be the application that we use to sync our blog posts with Hugo</li>
+<li>Obsidian Link : <a href="https://obsidian.md">https://obsidian.md</a></li>
+<li>Note*:  Only the Notes created within the posts folder will appear on the website.</li>
+</ul>
+<h4 id="task-1---create-posts-folder"><em>Task 1 - Create Posts Folder</em></h4>
+<ul>
+<li>Create a folder within Obsidian labeled posts.</li>
+<li>Make sure the locate where the Obsidian directory is located.</li>
+</ul>
+<p>!<img src="/images/Pasted%20image%2020250403142357.png" alt="Image Description"></p>
+<h2 id="setting-up-hugo"><em><strong>Setting up Hugo</strong></em></h2>
+<ul>
+<li>This is will be the framework we use for building the blog website.</li>
+</ul>
+<h4 id="task-1---hugo-installation"><em>Task 1 - Hugo Installation</em></h4>
+<p>For this blog I am using and Mac and all installations used the &lsquo;Homebrew&rsquo; commands.</p>
+<ul>
+<li>Installing Git: <a href="https://github.com/git-guides/install-git">https://github.com/git-guides/install-git</a>
+<ul>
+<li>Homebrew Command: &lsquo;<em>brew install git</em>&rsquo;</li>
+</ul>
+</li>
+<li>Installing Go: <a href="https://go.dev/doc/install">https://go.dev/doc/install</a>
+<ul>
+<li>Homebrew Command: &lsquo;<em>brew install go</em>&rsquo;</li>
+</ul>
+</li>
+<li>Installing Hugo: <a href="https://gohugo.io/installation/">https://gohugo.io/installation/</a>
+<ul>
+<li>Homebrew Command : &lsquo;<em>brew install hugo</em>&rsquo;</li>
+</ul>
+</li>
+</ul>
+<h4 id="task-2---check-versioning-">*Task 2 - Check Versioning *</h4>
+<p>The Check Versioning Tasks is used to make sure all installations were successful.</p>
+<ul>
+<li>Git Command: &lsquo;<em>git version</em>&rsquo;</li>
+<li>Go Command: &lsquo;<em>go version</em>&rsquo;</li>
+<li>Hugo Command: &lsquo;<em>hugo version</em>&rsquo;</li>
+</ul>
+<h4 id="task-3---create-new-site-with-hugo-">*Task 3 - Create New Site with Hugo *</h4>
+<pre tabindex="0"><code>##Create Hugo Site
+
+hugo new site sitename
+cd sitename
+</code></pre><h5 id="download-a-hugo-theme"><strong>Download a Hugo Theme</strong></h5>
+<p>Hugo Themes Link: <a href="https://themes.gohugo.io">https://themes.gohugo.io</a></p>
+<ul>
+<li>Most themes will have instructions on how to download. The option I chose were themes with submodule.</li>
+</ul>
+<pre tabindex="0"><code>## Initialize a git repository (Make sure you&#39;re in your Hugo site directory)
+
+git init
+
+## Set up your global username and email parameters for git
+
+git config --global user.name &#34;Name&#34;
+git config --global user.email &#34;Email Address&#34;
+
+## Install a theme (the theme I selected was Newsroom)
+git submodule add https://github.com/onweru/newsroom.git themes/newsroom
+
+## The newsroom module wants you to edit the hugo.toml file
+
+Use nano hugo.toml to open and edit the hugo.toml file
+
+Within the file make sure to set theme as 
+&#39;theme = [&#34;github.com/onweru/newsroom&#34;]&#39;
+then run
+hugo mod init yourWebsiteName &amp;&amp; hugo mod get -u
+</code></pre><h5 id="test-hugo"><strong>Test Hugo</strong></h5>
+<pre tabindex="0"><code>## Verify Hugo works with your theme by running this command 
+
+hugo server -t themename
+</code></pre><h4 id="task-4---syncing-obsidian-to-hugo"><em><strong>Task 4 - Syncing Obsidian to Hugo</strong></em></h4>
+<pre tabindex="0"><code>rsync -av --delete &#34;sourcepath&#34; &#34;destinationpath&#34;
+</code></pre><h5 id="adding-frontmatter">Adding Frontmatter</h5>
+<pre tabindex="0"><code>---
+title: &#39;blogtitle&#39;
+date: &#39;2025-04-03&#39;
+draft: false
+tags:
+  - &#39;tag1&#39;
+  - &#39;tag2&#39;
+---
+</code></pre><h5 id="transferring-images-from-obsidian-to-hugo">Transferring Images from Obsidian to Hugo</h5>
+<p>In your terminal switch to the static folder
+&lsquo;cd static&rsquo;</p>
+<p>Use the ls command to make sure this folder is empty.
+&rsquo;ls&rsquo;</p>
+<p>Make a folder for your images
+&lsquo;mkdir images&rsquo;</p>
+<p>Once that is complete open your preferred code editor
+My preferred code editor is Visual Studio Code</p>
+<p>&lsquo;code images.py&rsquo;</p>
+<p>In your images.py file paste the code below</p>
+<pre tabindex="0"><code>import os
+import re
+import shutil
+
+# Paths
+posts_dir = &#34;/Users/joshuaellis/Documents/DimezzBlog/content/posts/&#34;
+attachments_dir = &#34;/Users/joshuaellis/Obsidian/Attachments/&#34;
+static_images_dir = &#34;/Users/joshuaellis/Documents/DimezzBlog/static/images/&#34;
+
+# Step 1: Process each markdown file in the posts directory
+for filename in os.listdir(posts_dir):
+    if filename.endswith(&#34;.md&#34;):
+        filepath = os.path.join(posts_dir, filename)
+        
+        with open(filepath, &#34;r&#34;) as file:
+            content = file.read()
+        
+        # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
+        images = re.findall(r&#39;\[\[([^]]*\.png)\]\]&#39;, content)
+        
+        # Step 3: Replace image links and ensure URLs are correctly formatted
+        for image in images:
+            # Prepare the Markdown-compatible link with %20 replacing spaces
+            markdown_image = f&#34;![Image Description](/images/{image.replace(&#39; &#39;, &#39;%20&#39;)})&#34;
+            content = content.replace(f&#34;[[{image}]]&#34;, markdown_image)
+            
+            # Step 4: Copy the image to the Hugo static/images directory if it exists
+            image_source = os.path.join(attachments_dir, image)
+            if os.path.exists(image_source):
+                shutil.copy(image_source, static_images_dir)
+
+        # Step 5: Write the updated content back to the markdown file
+        with open(filepath, &#34;w&#34;) as file:
+            file.write(content)
+
+print(&#34;Markdown files processed and images copied successfully.&#34;)
+</code></pre><p>Make sure the following directories match your paths</p>
+<p>!<img src="/images/Pasted%20image%2020250405114730.png" alt="Image Description"></p>
+
+        </div>
+        <div class="post_extra mb-2">
+          
+<div class="copy" data-before="Share Story" data-after="Link Copied">
+  <svg class="icon">
+    <use xlink:href="#copy"></use>
+  </svg>
+</div>
+        </div>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+    <a href=/ class="post_nav"><span class="post_next">Latest Posts
+      <svg class="icon icon_scale">
+        <use xlink:href="#double-arrow"></use>
+      </svg>
+    </span></a>
+  </div>
+
+    </main>
+    <footer class="footer wrap pale">
+  <p>&copy;&nbsp;<span class="year"></span>&nbsp;</p>
+  <p class="attribution upcase">Designed by  <a href = '<no value>' target = '_blank' title = 'Linkedin Profile' rel = 'nonopener'><no value></a></p>
+</footer>
+
+
+<script src="/js/index.min.7ef3502a4aa35bffdbc91e02114dece16ca87b365bce51b661c34de19ca002503d9c6d24c6c78d6ca94a5523fefd00a8be58117495ebbe68f27cfdd802629713.js"></script>
+
+    <svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699.428 699.428" id="copy">
+    <path d="M502.714 0H240.428C194.178 0 153 42.425 153 87.429l-25.267.59c-46.228 0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249 0 87.428-42.424 87.428-87.428h21.857c46.25 0 87.429-42.424 87.429-87.428v-349.19L502.714 0zM459 655.715H131.143c-22.95 0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95 0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337 0 87.975 0 87.975 0 45.419 40.872 86.882 87.428 86.882H612v306zm-65.572-349.715c-23.277 0-43.714-42.293-43.714-64.981V44.348L612 174.857h-65.572zm-43.714 131.537H306c-12.065 0-21.857 9.77-21.857 21.835 0 12.065 9.792 21.835 21.857 21.835h196.714c12.065 0 21.857-9.771 21.857-21.835 0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065 0-21.857 9.77-21.857 21.834 0 12.066 9.792 21.836 21.857 21.836h196.714c12.065 0 21.857-9.77 21.857-21.836 0-12.064-9.792-21.834-21.857-21.834z"></path>
+  </symbol>
+  <symbol viewBox="0 0 53 42" xmlns="http://www.w3.org/2000/svg" id="double-arrow">
+    <path d="M.595 39.653a1.318 1.318 0 0 1 0-1.864L16.55 21.833a1.318 1.318 0 0 0 0-1.863L.595 4.014a1.318 1.318 0 0 1 0-1.863L2.125.62a1.318 1.318 0 0 1 1.864 0l19.35 19.349a1.318 1.318 0 0 1 0 1.863l-19.35 19.35a1.318 1.318 0 0 1-1.863 0zm29 0a1.318 1.318 0 0 1 0-1.864L45.55 21.833a1.318 1.318 0 0 0 0-1.863L29.595 4.014a1.318 1.318 0 0 1 0-1.863l1.53-1.53a1.318 1.318 0 0 1 1.864 0l19.35 19.349a1.318 1.318 0 0 1 0 1.863l-19.35 19.35a1.318 1.318 0 0 1-1.863 0z"></path>
+  </symbol>
+</svg>
+  </body>
+</html>
