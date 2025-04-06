@@ -20,7 +20,7 @@ tags:
 - Make sure the locate where the Obsidian directory is located.
   
 
-!![Image Description](/images/Pasted%20image%2020250403142357.png)
+![[Pasted image 20250403142357.png]]
 
 ## ***Setting up Hugo***
 - This is will be the framework we use for building the blog website.
@@ -166,7 +166,7 @@ print("Markdown files processed and images copied successfully.")
 
 Make sure the following directories match your paths
 
-!![Image Description](/images/Pasted%20image%2020250405114730.png)
+![[Pasted image 20250405114730.png]]
 
 
 #### Task 5 - Setting up GitHub

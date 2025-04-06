@@ -10,30 +10,30 @@
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second Blog Post - &#39;Azure Cloud Security&#39;</title>
+      <link>/posts/posts/posts/road-to-cse---azure-security-engineer-associate/</link>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/posts/posts/road-to-cse---azure-security-engineer-associate/</guid>
+      <description>&lt;p&gt;![[Pasted image 20250405225029.png]]&lt;/p&gt;&#xA;&lt;p&gt;The Beginning: What is Cloud Security??&lt;/p&gt;&#xA;&lt;p&gt;Cloud Security is the technologies, procedures, policies, and controls that aim to protect cloud-based systems and data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second Blog Post - &#39;Azure Cloud Security&#39;</title>
       <link>/posts/posts/road-to-cse---azure-security-engineer-associate/</link>
       <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
       <guid>/posts/posts/road-to-cse---azure-security-engineer-associate/</guid>
       <description>&lt;p&gt;![[Pasted image 20250405225029.png]]&lt;/p&gt;&#xA;&lt;p&gt;The Beginning: What is Cloud Security??&lt;/p&gt;&#xA;&lt;p&gt;Cloud Security is the technologies, procedures, policies, and controls that aim to protect cloud-based systems and data.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Second Blog Post - &#39;Azure Cloud Security&#39;</title>
-      <link>/posts/road-to-cse---azure-security-engineer-associate/</link>
-      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/road-to-cse---azure-security-engineer-associate/</guid>
-      <description>&lt;p&gt;!&lt;img src=&#34;/images/Pasted%20image%2020250405225029.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Beginning: What is Cloud Security??&lt;/p&gt;&#xA;&lt;p&gt;Cloud Security is the technologies, procedures, policies, and controls that aim to protect cloud-based systems and data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>First Blog Post - &#39;The Pipeline&#39;</title>
-      <link>/posts/blog---pipeline/</link>
-      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/blog---pipeline/</guid>
-      <description>&lt;h2 id=&#34;obsidian---note-application&#34;&gt;&lt;em&gt;&lt;strong&gt;Obsidian - Note application&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This will be the application that we use to sync our blog posts with Hugo&lt;/li&gt;&#xA;&lt;li&gt;Obsidian Link : &lt;a href=&#34;https://obsidian.md&#34; target=&#34;_blank&#34;&gt;https://obsidian.md&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Note*:  Only the Notes created within the posts folder will appear on the website.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;task-1---create-posts-folder&#34;&gt;&lt;em&gt;Task 1 - Create Posts Folder&lt;/em&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create a folder within Obsidian labeled posts.&lt;/li&gt;&#xA;&lt;li&gt;Make sure the locate where the Obsidian directory is located.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;/images/Pasted%20image%2020250403142357.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-up-hugo&#34;&gt;&lt;em&gt;&lt;strong&gt;Setting up Hugo&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This is will be the framework we use for building the blog website.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;task-1---hugo-installation&#34;&gt;&lt;em&gt;Task 1 - Hugo Installation&lt;/em&gt;&lt;/h4&gt;&#xA;&lt;p&gt;For this blog I am using and Mac and all installations used the &amp;lsquo;Homebrew&amp;rsquo; commands.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>First Blog Post - &#39;The Pipeline&#39;</title>
       <link>/posts/posts/blog---pipeline/</link>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
       <guid>/posts/posts/blog---pipeline/</guid>
+      <description>&lt;h2 id=&#34;obsidian---note-application&#34;&gt;&lt;em&gt;&lt;strong&gt;Obsidian - Note application&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This will be the application that we use to sync our blog posts with Hugo&lt;/li&gt;&#xA;&lt;li&gt;Obsidian Link : &lt;a href=&#34;https://obsidian.md&#34; target=&#34;_blank&#34;&gt;https://obsidian.md&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Note*:  Only the Notes created within the posts folder will appear on the website.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;task-1---create-posts-folder&#34;&gt;&lt;em&gt;Task 1 - Create Posts Folder&lt;/em&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create a folder within Obsidian labeled posts.&lt;/li&gt;&#xA;&lt;li&gt;Make sure the locate where the Obsidian directory is located.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;![[Pasted image 20250403142357.png]]&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-up-hugo&#34;&gt;&lt;em&gt;&lt;strong&gt;Setting up Hugo&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This is will be the framework we use for building the blog website.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;task-1---hugo-installation&#34;&gt;&lt;em&gt;Task 1 - Hugo Installation&lt;/em&gt;&lt;/h4&gt;&#xA;&lt;p&gt;For this blog I am using and Mac and all installations used the &amp;lsquo;Homebrew&amp;rsquo; commands.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First Blog Post - &#39;The Pipeline&#39;</title>
+      <link>/posts/posts/posts/blog---pipeline/</link>
+      <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/posts/posts/blog---pipeline/</guid>
       <description>&lt;h2 id=&#34;obsidian---note-application&#34;&gt;&lt;em&gt;&lt;strong&gt;Obsidian - Note application&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This will be the application that we use to sync our blog posts with Hugo&lt;/li&gt;&#xA;&lt;li&gt;Obsidian Link : &lt;a href=&#34;https://obsidian.md&#34; target=&#34;_blank&#34;&gt;https://obsidian.md&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Note*:  Only the Notes created within the posts folder will appear on the website.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;task-1---create-posts-folder&#34;&gt;&lt;em&gt;Task 1 - Create Posts Folder&lt;/em&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create a folder within Obsidian labeled posts.&lt;/li&gt;&#xA;&lt;li&gt;Make sure the locate where the Obsidian directory is located.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;![[Pasted image 20250403142357.png]]&lt;/p&gt;&#xA;&lt;h2 id=&#34;setting-up-hugo&#34;&gt;&lt;em&gt;&lt;strong&gt;Setting up Hugo&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This is will be the framework we use for building the blog website.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;task-1---hugo-installation&#34;&gt;&lt;em&gt;Task 1 - Hugo Installation&lt;/em&gt;&lt;/h4&gt;&#xA;&lt;p&gt;For this blog I am using and Mac and all installations used the &amp;lsquo;Homebrew&amp;rsquo; commands.&lt;/p&gt;</description>
     </item>
   </channel>

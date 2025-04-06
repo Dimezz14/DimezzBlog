@@ -11,7 +11,7 @@ tags:
 ---
 
 
-!![Image Description](/images/Pasted%20image%2020250405225029.png)
+![[Pasted image 20250405225029.png]]
 
 The Beginning: What is Cloud Security??
 
