@@ -7,7 +7,7 @@ cd "$SCRIPT_DIR"
 
 # Set variables for Obsidian to Hugo copy
 sourcePath="/Users/joshuaellis/Obsidian/posts"
-destinationPath="/Users/joshuaellis/Documents/DimezzBlog/content/posts/posts"
+destinationPath="/Users/joshuaellis/Documents/DimezzBlog/content/posts"
 
 # Set GitHub Repo
 myrepo="git@github.com:Dimezz14/DimezzBlog.git"
