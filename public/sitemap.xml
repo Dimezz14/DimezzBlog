@@ -2,24 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/blog/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/dimezzintech/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/blog---pipeline/</loc>
     <lastmod>2025-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/posts/posts/blog---pipeline/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/dimezzintech/</loc>
-    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/blog---pipeline/</loc>
-    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url>
 </urlset>

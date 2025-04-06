@@ -1,1 +1,32 @@
-theme = ["github.com/onweru/newsroom"]
+theme = "dream"
+
+[params]
+zenMode = false
+defaultContentLanguage = "en"
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+images = ["img/global-background.jpg"]
+ 
+author = "Joshua E"
+description = "DimezzInTech Blog"
+avatar = "img/personal/avatar.jpg"
+headerTitle = "DimezzInTech Blog"
+motto = "Sometimes you win, sometimes you learn!"
+
+
+email = "g1enyy0ung@gmail.com"
+ 
+siteStartYear = 2025
+
+# options
+stickyNav = true
+# reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
+# collapseNavItems = ["posts", "categories", "tags"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
