@@ -10,17 +10,17 @@
     <atom:link href="/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second Blog Post - &#39;Azure Cloud Security&#39;</title>
-      <link>/posts/posts/road-to-cse---azure-security-engineer-associate/</link>
+      <link>/posts/posts/posts/road-to-cse---azure-security-engineer-associate/</link>
       <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/posts/road-to-cse---azure-security-engineer-associate/</guid>
+      <guid>/posts/posts/posts/road-to-cse---azure-security-engineer-associate/</guid>
       <description>&lt;p&gt;![[Pasted image 20250405225029.png]]&lt;/p&gt;&#xA;&lt;p&gt;The Beginning: What is Cloud Security??&lt;/p&gt;&#xA;&lt;p&gt;Cloud Security is the technologies, procedures, policies, and controls that aim to protect cloud-based systems and data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Second Blog Post - &#39;Azure Cloud Security&#39;</title>
-      <link>/posts/road-to-cse---azure-security-engineer-associate/</link>
+      <link>/posts/posts/road-to-cse---azure-security-engineer-associate/</link>
       <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/road-to-cse---azure-security-engineer-associate/</guid>
-      <description>&lt;p&gt;!&lt;img src=&#34;/images/Pasted%20image%2020250405225029.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Beginning: What is Cloud Security??&lt;/p&gt;&#xA;&lt;p&gt;Cloud Security is the technologies, procedures, policies, and controls that aim to protect cloud-based systems and data.&lt;/p&gt;</description>
+      <guid>/posts/posts/road-to-cse---azure-security-engineer-associate/</guid>
+      <description>&lt;p&gt;![[Pasted image 20250405225029.png]]&lt;/p&gt;&#xA;&lt;p&gt;The Beginning: What is Cloud Security??&lt;/p&gt;&#xA;&lt;p&gt;Cloud Security is the technologies, procedures, policies, and controls that aim to protect cloud-based systems and data.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
