@@ -255,7 +255,7 @@ Setting up Hugo This is will be the framework we use for building the blog websi
 Setting up Hugo This is will be the framework we use for building the blog website. Task 1 - Hugo Installation For this blog I am using and Mac and all installations used the ‘Homebrew’ commands.">
   <meta itemprop="datePublished" content="2025-04-03T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-04-05T00:00:00+00:00">
-  <meta itemprop="wordCount" content="783">
+  <meta itemprop="wordCount" content="1227">
   <meta itemprop="image" content="/img/global-background.jpg">
   <meta itemprop="keywords" content="DimezzInTech,Blog">
 
@@ -266,7 +266,7 @@ Setting up Hugo This is will be the framework we use for building the blog websi
             Thursday, Apr 3, 2025
           
 
-          | <span>4 minute read</span>
+          | <span>6 minute read</span>
 
           
           | <span>Updated at
@@ -528,7 +528,121 @@ echo &ldquo;Deploying to GitHub Hostinger&hellip;&rdquo;
 git subtree split &ndash;prefix public -b hostinger-deploy
 git push origin hostinger-deploy:hostinger &ndash;force
 git branch -D hostinger-deploy</p>
+<h1 id="the-mega-script">The Mega Script</h1>
+<pre tabindex="0"><code>#!/bin/bash
+set -euo pipefail
 
+# Change to the script&#39;s directory
+SCRIPT_DIR=&#34;$(cd &#34;$(dirname &#34;${BASH_SOURCE[0]}&#34;)&#34; &amp;&amp; pwd)&#34;
+cd &#34;$SCRIPT_DIR&#34;
+
+# Set variables for Obsidian to Hugo copy
+sourcePath=&#34;/Users/joshuaellis/Obsidian/posts&#34;
+destinationPath=&#34;/Users/joshuaellis/Documents/DimezzBlog/content/posts&#34;
+
+# Set GitHub Repo
+myrepo=&#34;reponame&#34;
+
+# Check for required commands
+for cmd in git rsync python3 hugo; do
+    if ! command -v $cmd &amp;&gt; /dev/null; then
+        echo &#34;$cmd is not installed or not in PATH.&#34;
+        exit 1
+    fi
+done
+
+# Step 1: Check if Git is initialized, and initialize if necessary
+if [ ! -d &#34;.git&#34; ]; then
+    echo &#34;Initializing Git repository...&#34;
+    git init
+    git remote add origin $myrepo
+else
+    echo &#34;Git repository already initialized.&#34;
+    if ! git remote | grep -q &#39;origin&#39;; then
+        echo &#34;Adding remote origin...&#34;
+        git remote add origin $myrepo
+    fi
+fi
+
+# Step 2: Sync posts from Obsidian to Hugo content folder using rsync
+echo &#34;Syncing posts from Obsidian...&#34;
+
+if [ ! -d &#34;$sourcePath&#34; ]; then
+    echo &#34;Source path does not exist: $sourcePath&#34;
+    exit 1
+fi
+
+if [ ! -d &#34;$destinationPath&#34; ]; then
+    echo &#34;Destination path does not exist: $destinationPath&#34;
+    exit 1
+fi
+
+rsync -av --delete &#34;$sourcePath&#34; &#34;$destinationPath&#34;
+
+# Step 3: Process Markdown files with Python script to handle image links
+echo &#34;Processing image links in Markdown files...&#34;
+if [ ! -f &#34;images.py&#34; ]; then
+    echo &#34;Python script images.py not found.&#34;
+    exit 1
+fi
+
+if ! python3 images.py; then
+    echo &#34;Failed to process image links.&#34;
+    exit 1
+fi
+
+# Step 4: Build the Hugo site
+echo &#34;Building the Hugo site...&#34;
+if ! hugo; then
+    echo &#34;Hugo build failed.&#34;
+    exit 1
+fi
+
+# Step 5: Add changes to Git
+echo &#34;Staging changes for Git...&#34;
+if git diff --quiet &amp;&amp; git diff --cached --quiet; then
+    echo &#34;No changes to stage.&#34;
+else
+    git add .
+fi
+
+# Step 6: Commit changes with a dynamic message
+commit_message=&#34;New Blog Post on $(date +&#39;%Y-%m-%d %H:%M:%S&#39;)&#34;
+if git diff --cached --quiet; then
+    echo &#34;No changes to commit.&#34;
+else
+    echo &#34;Committing changes...&#34;
+    git commit -m &#34;$commit_message&#34;
+fi
+
+# Step 7: Push all changes to the main branch
+echo &#34;Deploying to GitHub Main...&#34;
+if ! git push origin main; then
+    echo &#34;Failed to push to main branch.&#34;
+    exit 1
+fi
+
+# Step 8: Push the public folder to the hostinger branch using subtree split and force push
+echo &#34;Deploying to GitHub Hostinger...&#34;
+if git branch --list | grep -q &#39;hostinger-deploy&#39;; then
+    git branch -D hostinger-deploy
+fi
+
+if ! git subtree split --prefix public -b hostinger-deploy; then
+    echo &#34;Subtree split failed.&#34;
+    exit 1
+fi
+
+if ! git push origin hostinger-deploy:hostinger --force; then
+    echo &#34;Failed to push to hostinger branch.&#34;
+    git branch -D hostinger-deploy
+    exit 1
+fi
+
+git branch -D hostinger-deploy
+
+echo &#34;All done! Site synced, processed, committed, built, and deployed.&#34;```
+</code></pre>
 
         
       </section>
@@ -537,23 +651,17 @@ git branch -D hostinger-deploy</p>
       <div class="divider"></div>
       <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
         
-        <a role="button" class="btn btn-outline h-12" href="/posts/blog---pipeline/" title="First Blog Post - &#39;The Pipeline&#39;">
+        <a role="button" class="btn btn-outline h-12" href="/posts/posts/road-to-cse---azure-security-engineer-associate/" title="Second Blog Post - &#39;Azure Cloud Security&#39;">
           <ion-icon name="chevron-back"></ion-icon>
           <div class="inline-flex flex-col items-start">
             <span class="text-base-content/60 text-xs font-normal">Previous page</span>
-            <span class="max-w-48 truncate">First Blog Post - &#39;The Pipeline&#39;</span>
+            <span class="max-w-48 truncate">Second Blog Post - &#39;Azure Cloud Security&#39;</span>
           </div>
         </a>
         
 
         
-        <a role="button" class="btn btn-outline h-12" href="/posts/posts/road-to-cse---azure-security-engineer-associate/" title="">
-          <div class="inline-flex flex-col items-end">
-            <span class="text-base-content/60 text-xs font-normal">Next page</span>
-            <span class="max-w-48 truncate"></span>
-          </div>
-          <ion-icon name="chevron-forward"></ion-icon>
-        </a>
+        <div></div>
         
       </div>
       
